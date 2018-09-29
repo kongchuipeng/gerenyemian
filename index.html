@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <script type="text/javascript" src="js/jquery.min.js" ></script>
+	<!--   <script type="text/javascript" src="js/two.min.js" ></script>-->
+	    <link rel="stylesheet" href="css/animate.css" />
+	    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+	    <script type="text/javascript" src="js/jquery.fullPage.js" ></script>
+  <link rel="stylesheet" href="css/style.css" />
+	    <link rel="stylesheet" href="css/bootstrap.min.css" />
+	 <!--   <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+	 	<link href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+	<style>
+		html,body{
+			margin: 0;
+			padding: 0;
+			border: none;
+			height: 100%;
+			width: 100%;
+		}
+		.main_page{
+			height: 100%;
+			min-height: 100%;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+			background: url(img/105b69b526e349bcad5633571fb457a1.png)  no-repeat center center;	
+			/*background: url(img/banner2.png)  no-repeat center center;	
+			background: url(img/banner.png)  no-repeat center center;*/			
+			background-size: cover ;
+			/*animation: bganim  9s linear infinite;
+	-webkit-animation: bganim 9s linear infinite;
+	transition: all;
+	-webkit-transition: all;*/
+		}
+		
+		@-webkit-keyframes bganim {
+  0% {
+    background: url(img/timg (3).jpg)  no-repeat center center;	
+    background-size: cover ;
+  }
+
+   50% {
+   background: url(img/bn1.png) no-repeat center center;	
+   background-size: cover ;
+  }
+
+  100% {
+    background: url(img/timg (5).png) no-repeat center center;
+    background-size: cover ;	
+  }
+}
+
+@keyframes bganim {
+  0% {
+    background: url(img/bn1.png)  no-repeat center center;
+    background-size: cover ;	
+  }
+
+   50% {
+   background: url(img/bn2.png)  no-repeat center center;
+   background-size: cover ;	
+  }
+
+  100% {
+    background: url(img/bn3.png)  no-repeat center center;	
+    background-size: cover ;
+  }
+}
+.btn {
+    display: inline-block;
+    padding: 40px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    /* border-radius: 4px; */
+}
+.btn-default{
+	border-radius: 0;
+	background: transparent;
+	border: 1px solid #FFFFFF;
+	color: #333;
+}
+.btn-default:hover{
+	border-radius: 0;
+	background: transparent;
+	border: 1px solid #C9302C;
+	color: #C9302C;
+}
+#slide1{
+		background: url(img/bn3.png) no-repeat;
+		background-size: cover ;
+		
+	}
+	#slide2{
+		background: url(img/timg (5).png) no-repeat ;
+		background-size: cover ;
+	
+	}
+	</style>
+	</head>
+	<body>
+		
+	<section class="main_page" id="main_page">
+		<div class="container" style="top: 40%; position: relative;">
+			<h1 class="slideInRight animated_other">
+			
+				WUIF1807-2:孔斐芸
+			</h1>
+	     <p class="slideInLeft animated_other" style="color:blanchedalmond;font-size: 22px;">
+			年龄:22岁<br />
+			家乡:山西晋城<br />
+			专业:软件技术<br />
+			
+	     </p>
+		</div>
+		<div id="menu" ><svg class="menu_btn" >
+		<g id="menu_default"  onclick="change()">
+	    <g stroke="#fff"  stroke-width="2" id="menu_close">
+	    <path d='M 20 20 L 40 20 M 20 30 L 50 30 M 20 40 L 40 40'></path>
+	    </g>
+	 
+	    <g stroke="#fff"  stroke-width="2" id="menu_open">
+	    <path d='M 20 20 L 40 40 M 40 20 L 20 40 '></path>
+	    </g>
+	    <rect x="0" y="0" width="80" height="80" stroke="none" class="myrect" fill="rgba(255,255,0,0)"></rect>
+		</g>
+	</svg>
+	</div>
+	
+
+	<section id="page1">
+		
+			<div id="fullpage">
+	<div class="section " id="section0">
+	
+		<div class="container fadeOutLeft animated_other">
+			<div class="row">
+				<div class="col-sm-4 col-md-4 row1" >
+    <div class="thumbnail" style="border: none; border-radius: 0;">
+      <img src="weather2/img/screen.png" width="100%" style="height: 260px;">
+      <div class="caption">
+        <h3>天气app</h3>
+        <p style="color: #8C8C8C;">便于了解所在地区的天气</p>
+        <p><a href="weather2/index.html" class=" mybtn" role="" style="width: 80%;">查看详情</a> </p>
+      </div>
+    </div>
+  </div>
+  
+	<div class="col-sm-4 col-md-4 row2" >
+    <div class="thumbnail" style="border: none; border-radius: 0;">
+      <img src="img/one.png" width="100% " style="height: 260px;">
+      <div class="caption">
+        <h3>金立手机</h3>
+        <p style="color: #8C8C8C;">高清大屏,曲面机身</p>
+        <p><a href="金立/index.html" class=" mybtn" role="" style="width: 80%;">查看详情</a> </p>
+      </div>
+    </div>
+  </div>
+				
+				
+	<div class="col-sm-4 col-md-4 row3" >
+    <div class="thumbnail" style="border: none; border-radius: 0;">
+      <img src="素馨花卉/img/3.jpg" width="100%" style="height: 260px;">
+      <div class="caption">
+        <h3>素馨花卉</h3>
+        <p style="color: #8C8C8C;">随心开放,芳香宜人</p>
+        <p><a href="素馨花卉/index.html" class=" mybtn" role="" style="width: 80%;">查看详情</a> </p>
+      </div>
+    </div>
+  </div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    
+			<div class="intro fadeOutUpBig animated">
+			
+				<div class="slide" id="slide1"><h1>明天的希望，让我们忘了今天的痛苦。</h1>
+				<p >
+					真正的坚强，就是在哭的时候要彻底，笑的时候要开怀，做的时候毫不犹豫。<br />在成长的路上，懂得了有一些习惯我们必须戒掉。在成长的路上，我们也曾拒绝长大，但是后来慢慢明白了，没有人可以拒绝。<br />于是，我们学会了努力，学会了接受自己的命运。
+
+				</p></div>
+		        <div class="slide" id="slide2"><h1>奋斗没有终点，任何时候都是一个起点</h1>
+				<p >
+					有压力，但不会被压垮；迷茫，但永不绝望。
+
+
+
+				</p></div>
+				<div></div>
+				
+			</div>
+	
+
+	</div>
+	<div class="section" id="section2">
+		<div class="intro fadeOutUpBig animated">
+			
+			<div class="container ">
+			<div class="row">
+				<div class="col-sm-6 col-md-6 section2_cell_left" >
+    <div class="thumbnail" style="border: none; border-radius: 0; padding: 0;">
+      <img src="img/timg (4).jpg" width="100%">
+     
+    </div>
+  </div>
+  
+	<div class="col-sm-6 col-md-6 section2_cell_right" >
+    <div class="thumbnail" style="border: none; border-radius: 0; text-align: left; background: transparent;">
+   
+      <div class="caption">
+        <h3 style="color: #FFFFFF;">互联网时代</h3>
+        <p style="color: #FFFFFF;text-align: left;">
+        	
+        	互联网技术及其应用发展演进的内在规律，如迭代中创新，试错中发展。.互联网的媒介属性带来的媒体传播和舆论生成的新规律和新特点。
+			人们通过互联网获取信息、表达意见、沟通交流、消费购物等形成的行为习惯、思维方式和价值取向。.企业基于互联网特点和人的需求，进行商业运营的营销模式。
+			物联网、云计算和大数据等互联网深度运用所形成的逻辑运算和分析预见能力。
+			移动互联网背景下，人脑即时互联互通所形成的群体思维。
+
+        	
+        	
+        	
+        </p>
+      <p style="margin-top: 15px;">
+      	<a href="#" class="btn btn-default" role="button" style="margin-right: 5px;">
+      		<i class="fa fa-group fa-2x" ></i>
+      	</a> 
+      	<a href="#" class="btn btn-default" role="button" style="margin-right: 5px;">
+      		<i class="fa fa-wechat fa-2x" ></i>
+      	</a>
+      	<a href="#" class="btn btn-default" role="button" style="margin-right: 5px;">
+      		
+      		<i class="fa fa-weibo fa-2x" ></i>
+      	</a> 
+      	<a href="#" class="btn btn-default" role="button" style="margin-right: 5px;">
+      		
+      		<i class="fa fa-qq fa-2x" ></i>
+      	</a>
+      </p>
+      </div>
+    </div>
+  </div>
+
+			</div>
+		</div>
+			
+			
+			
+		</div>
+	</div>
+	
+	
+	<div class="section" id="section4">
+	    
+			<div class="intro fadeOutUpBig animated">
+				<h1>未来一切皆有可能</h1>
+				<p>
+					“互联网思维”，是指运用互联网技术及其应用的特点，<br />改善人与人、人与物、人与信息以及物与物之间关系的规律和方法。同时，“互联网思维”还应是一个动态的概念，随着互联网技术的更新和迭代，其内涵与外延还将不断改变和深化。
+
+				</p>
+				
+			</div>
+	
+
+	</div>
+	
+	
+	
+	
+</div>
+		
+		
+	</section>
+	</section>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				
+				navigation: true,
+				css3:true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Products', 'Introduce', 'Introduce','Introduce'],
+			afterLoad: function(anchorLink, index){
+		var loadedSection = $(this);
+		//using index
+		if(index == 1){
+		
+			$('#section0 .container').addClass('fadeInLeft');
+			$('#section0 .container').removeClass('fadeOutLeft');
+			
+		}
+		if(index == 2){
+			$('#section1 .intro').removeClass('fadeOutUpBig ');
+			$('#section1 .intro').addClass('fadeInUpBig');
+		}
+      if(index == 3){
+			$('#section2 .intro').removeClass('fadeOutUpBig ');
+			$('#section2 .intro').addClass('fadeInUpBig');
+			$('.section2_cell_left').addClass('slideInLeft animated');
+			$('.section2_cell_right').addClass('slideInRight animated');
+		}
+      if(index == 4){
+			$('#section4 .intro').removeClass('fadeOutUpBig ');
+			$('#section4 .intro').addClass('fadeInUpBig');
+		}
+
+},
+			onLeave: function(index, nextIndex, direction){
+		//using index
+		if(index == 1){
+			
+			$('#section0 .container').addClass('fadeOutLeft');
+			$('#section0 .container').removeClass('fadeInLeft');
+		}
+		if(index == 2){
+			$('#section1 .intro').addClass('fadeOutUpBig ');
+			$('#section1 .intro').removeClass('fadeInUpBig');
+		}
+       if(index == 3){
+			$('#section2 .intro').addClass('fadeOutUpBig ');
+			$('#section2 .intro').removeClass('fadeInUpBig');
+			$('.section2_cell_left').removeClass('slideInLeft animated');
+			$('.section2_cell_right').removeClass('slideInRight animated');
+		}
+       if(index == 4){
+			$('#section4 .intro').addClass('fadeOutUpBig ');
+			$('#section4 .intro').removeClass('fadeInUpBig');
+		}
+
+	}
+			
+			});
+		});
+	</script>
+	<script>
+ var isClick="true";
+  function change(){
+	var ss=document.getElementById('menu_default');
+	var close=document.getElementById('menu_close');
+	var open=document.getElementById('menu_open');
+	var page1=document.getElementById('page1');
+	if(isClick==="true")
+	{
+	    close.setAttribute('class','fadeOut animated');			
+		 setTimeout(function(){
+			open.setAttribute('class','fadeIn animated');
+			 page1.setAttribute('class','fadeInUpBig animated');
+			  $('#fp-nav').removeClass('fadeOut');
+			 $('#fp-nav').addClass('fadeIn animated');
+			 $('#main_page h1').addClass('slideOutRight');
+			 $('#main_page h1').removeClass('slideInRight');
+			 $('#main_page p').addClass('slideOutLeft');
+			 $('#main_page p').removeClass('slideInLeft');
+
+		},500);
+        
+		isClick="false";
+		
+		}
+	else if(isClick==="false"){
+	
+		open.setAttribute('class','fadeOut animated');	
+		setTimeout(function(){
+			close.setAttribute('class','fadeIn animated');
+			page1.setAttribute('class','fadeOutDownBig animated');
+			 $('#fp-nav').removeClass('fadeIn');
+			 $('#fp-nav').addClass('fadeOut animated');
+			 $('#main_page h1').removeClass('slideOutRight');
+			 $('#main_page h1').addClass('slideInRight');
+			 $('#main_page p').removeClass('slideOutLeft');
+			 $('#main_page p').addClass('slideInLeft');
+		},500);
+	
+		isClick="true";	
+	}
+}
+
+	</script>
+	</body>
+</html>

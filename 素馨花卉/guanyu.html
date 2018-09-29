@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/guanyu.css">
+	<script src="./js/animate.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="header-b">
+			<div class="header-p">
+				<img src="./img/logo.png">
+			</div>
+			<div class="header-list">
+				<ul>
+					<a href="index.html"><li>网站首页</li></a>
+					<a href="huayanhuayu.html"><li>花言花语</li></a>
+					<a href="#"><li>素馨动态</li></a>
+					<a href="huayi.html"><li>素馨花艺</li></a>
+					<a href="liuyan.html"><li>留言建议</li></a>
+					<a href="guanyu.html"><li class="hot">关于素馨</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="banner-p" >
+			<img src="./img/7.1.jpg">
+		</div>
+	</div>
+	<div class="about">
+		<div class="about-content">
+			<p style="margin-bottom: 20px;">郑州素馨花卉有限公司由优秀的花艺、花卉设计师王亚楠于2017年成立。</p>
+			<p>经营范围：花卉、工艺品、饰品的销售；礼仪策划；花卉、苗木种植技术咨询。</p>
+			<p>前期以鲜花、花束的包装及零售为主，逐渐过渡到花艺培训、家庭园艺等花香生活的指导，以及与花卉相关的文学创作。</p>
+			<p>公司致力于将多彩花艺带入寻常人家，让对生活有着更高追求的人们享受温馨素雅的花香世界，力求将这种文化做到极致。</p>
+			<p>公司地址：郑州市 中牟县 育才巷 县直一初中家属院 1单元201室</p>
+			<p>联系电话：0371-62180519  15890062947</p>
+			<p>电子邮箱：office@suxinhuahui.com</p>
+			<p></p>
+			<div class="map">
+			<img src="./img/map.png"></div>
+		</div>
+	</div>
+	<hr>
+	<div class="kong"></div>
+	<footer>
+		<div class="icon">
+			<a href="#"><img src="./img/微信.png"></a>
+			<a href="#"><img src="./img/qq.png"></a>
+			<a href="#"><img src="./img/信封.png"></a>
+		</div>
+		<p><a href="#">豫ICP备17021305号</a>   &nbsp&nbsp<a href="#"><img src="./img/国徽.png">豫公网安备 41012202000160号</a></p>
+		<p>联系电话 0371-62180519 15890062947</p>
+		<p>郑州素馨花卉有限公司 版权所有&copy2017-2021</p>
+	</footer>
+	<div class="back">
+		<img src="./img/向上.png">
+	</div>
+</body>
+</html>
+<script>
+    let header = document.querySelector(".header");
+    let text = document.querySelectorAll(".header-list ul a li");
+    // console.log(text);
+    window.addEventListener("scroll",function () {
+        let bodyTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (bodyTop > 0) {
+            header.style.backgroundColor = "#fff";
+            for (let i = 0; i < text.length-1; i++) {
+                text[i].style.color = "#000";
+                text[i].onmouseover = function () {
+                    text[i].style.color = "#16B0DC";
+                };
+                text[i].onmouseout = function () {
+                    text[i].style.color = "black";
+                }
+            }
+        }
+        if(bodyTop==0){
+            header.style.backgroundColor = "rgba(0,0,0,0.15)";
+            for(let i =0; i<text.length-1; i++){
+                text[i].style.color = "#fff";
+                text[i].onmouseout = function () {
+                    text[i].style.color = "#fff";
+                }
+            }
+        }
+    },false);
+
+
+    let top2 = document.querySelector(".back");
+    window.addEventListener("scroll",function () {
+        let bodytop = document.body.scrollTop||document.documentElement.scrollTop;
+        if(bodytop>600){
+            top2.style.bottom = "20px"
+        }
+        if(bodytop<=600){
+            top2.style.bottom = "-36px"
+        }
+        top2.onclick=function () {
+            animate(document.documentElement,{scrollTop:0});
+            animate(document.body,{scrollTop:0});
+        }
+    },false)
+</script>

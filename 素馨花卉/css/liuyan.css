@@ -1,0 +1,249 @@
+* {
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: #2a333c;
+	font-size: 16px;
+	margin: auto;
+	outline: none;
+}
+header {
+	background-color: white;
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	height: 80px;
+	width: 100%;
+	border-bottom: solid;
+	border-color: #CDCDCD;
+	border-width: 1px;
+	/*background-color: black;*/
+
+}
+.headerContent {
+/*	background-color: yellow;*/
+	width: 1170px;
+	height: 80px;
+}
+.headerContent ul {
+	float: right;
+}
+.headerContent ul a li {
+	float: left;
+	font-size: 14px;
+	color: #2a333c;
+	line-height: 80px;
+	padding: 0 15px;
+}
+.headerContent ul a li:hover {
+	color: #16B0DC;
+}
+.text {
+	margin-top: 80px;
+	background-color: #F2F2F2;
+	height: 120px;
+	width: 100%;
+	text-align: center;
+}
+.text h1 {
+	font-size: 36px;
+	line-height: 120px;
+	color: #F67A82;
+	font-weight: 400;
+}
+.main {
+	width: 100%;
+	height: 937px;
+	background-color: #F2F2F2;
+}
+.mainContent {
+	width: 1170px;
+	/*height: 957px;*/
+	/*background-color: pink;*/
+	/*background-color: orange;*/
+}
+.mainContent-left {
+	/*height: 847px;*/
+	width: 720px;
+	background-color: white;
+	float: left;
+	padding: 30px;
+}
+.mainContent-left ul li {
+	padding: 10px 0;
+	width: 720px;
+	height: 59px;
+	/*background-color: blue;*/
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: #E4EAEC;
+
+}
+.mainContent-left ul li h4 {
+	line-height: 16px;
+	height: 16px;
+	width: 672px;
+	/*background-color: red;*/
+	font-weight: 400;
+	color: #37474F;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.mainContent-left>ul>li>p {
+	width: 672px;
+	height: 21px;
+	/*background-color: orange;*/
+	margin-bottom: 11px;
+    line-height: 20px;
+	color: #a3afb7;
+	font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mainContent-left ul li:last-child{
+	margin-bottom: 20px;
+}
+.data {
+	float: right;
+	font-size: 12px;
+	line-height: 16px;
+	color: #a3afb7;
+}
+.picture {
+	
+	float: left;
+	width: 46px;
+	height: 53px;
+	/*background-color: orange;*/
+}
+.nbt {
+	width: 720px;
+	height: 36px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 36px;
+	color: #9DA2AA;
+	background-color: rgba(228,234,236,1);
+}
+.nbt:hover {
+	background-color: rgba(228,234,236,0.6);
+}
+.mainContent-right {
+	position: relative;
+	height: 368px;
+	width: 300px;
+	padding: 30px;
+	background-color: white;
+	float: right;
+}
+input {
+	width: 300px;
+	height: 36px;
+	margin-bottom: 20px;
+	text-indent: 1em;
+	font-size: 14px;
+	/*border-color: #999;*/
+	border: 1px solid #E4EAEC;
+}
+textarea{
+	margin-bottom: 5px;
+	/*text-indent: 1em;*/
+	/*line-height: 36px;*/
+    padding: 10px;
+    box-sizing: border-box;
+	font-size: 14px;
+	width: 300px;
+	height: 124px;
+	resize: none;
+	border: 1px solid #E4EAEC;
+}
+input::-webkit-input-placeholder{
+	color: #A3AFB7;
+}
+.mainContent-right>p>span{
+    color: red;
+}
+.mainContent-right>p{
+    margin-bottom: 5px;
+}
+.b {
+	width: 302px;
+	height: 36px;
+	margin-bottom: 10px;
+}
+.yan {
+	padding: 8px 13px;
+	background-color: #F3F7F9;
+	float: right;
+}
+a .tijiao {
+	margin-top: 30px;
+	padding: 0;
+	font-size: 14px;
+	color: white;
+	line-height: 36px;
+	text-align: center;
+	width: 300px;
+	height: 36px;
+	background-color: rgba(121,180,235,1);
+}
+.tijiao:hover{
+	background-color: rgba(121,180,235,0.6);
+}
+footer {
+	width: 100%;
+	height: 182px;
+	background-color: #F5F5F5;
+}
+.icon {
+	height: 56px;
+	width: 1140px;
+/*	background-color: pink;*/
+	text-align: center;
+}
+.icon a {
+/*	display: inline-block;*/
+	height: 26px;
+	width: 100%;
+	padding: 10px;
+	line-height: 56px;
+}
+.icon a img {
+	margin-top: 15px;
+}
+
+footer p {
+	font-size: 14px;
+	margin:auto;
+	line-height: 25px;
+	width: 1140px;
+	height: 25px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+footer p a {
+	color: rgba(98,168,234,1);
+}
+footer p a:hover{
+	color: rgba(98,168,234,0.8);
+	text-decoration: underline;
+}
+.kong {
+	height: 20px;
+	background-color: white;
+}
+.back {
+	width: 36px;
+	height: 36px;
+	position: fixed;
+	bottom: -36px;
+	right: 0;
+	z-index: 999;
+	background-color: #62A8EA;
+	line-height: 36px;
+	text-align: center;
+	transition: all 0.5s;
+	cursor: pointer;
+}
